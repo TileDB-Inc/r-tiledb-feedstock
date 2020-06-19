@@ -6,8 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: 964d8d7596b8bee3831c9310e4bf0db231d78b72a303a150ce1b2a3b3b7f53c4
+  git_url: https://github.com/TileDB-Inc/TileDB-R
+  git_tag: ihn/conda_fix1
+  #url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
+  #sha256: 964d8d7596b8bee3831c9310e4bf0db231d78b72a303a150ce1b2a3b3b7f53c4
 
 build:
   number: 0
