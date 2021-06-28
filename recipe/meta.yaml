@@ -1,5 +1,5 @@
 {% set name = "r-tiledb" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: dff554b833bf9d048fb9e1e711827c8b4df0c2c1f8603c766f6d49479d850a0b
+  sha256: cee509e000ef09b4c412796f932bc4791beefb437be6278206ef3f6c73d6ae30
 
 build:
   number: 0
@@ -29,12 +29,13 @@ requirements:
     - r-rcpp >=0.12.15  # [build_platform != target_platform]
   host:
     - r-base
-    - tiledb >2.0
+    - tiledb 2.3.*
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
     - r-arrow
   run:
+    - tiledb 2.3.*
     - r-base
     - r-nanotime
     - r-arrow
