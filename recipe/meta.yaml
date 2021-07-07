@@ -10,7 +10,7 @@ source:
   sha256: dff554b833bf9d048fb9e1e711827c8b4df0c2c1f8603c766f6d49479d850a0b
 
 build:
-  number: 0
+  number: 2
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -33,12 +33,10 @@ requirements:
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
-    - r-arrow
   run:
     - r-base 3.6.*
     - tiledb 2.3.*
     - r-nanotime
-    - r-arrow
 
 test:
   requires:
