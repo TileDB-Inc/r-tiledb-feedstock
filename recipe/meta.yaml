@@ -33,11 +33,9 @@ requirements:
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
-    - r-arrow
   run:
     - r-base
     - r-nanotime
-    - r-arrow
 
 test:
   requires:
