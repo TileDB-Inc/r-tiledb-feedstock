@@ -28,13 +28,13 @@ requirements:
     - r-nanotime  # [build_platform != target_platform]
     - r-rcpp >=0.12.15  # [build_platform != target_platform]
   host:
-    - r-base 3.6.*
+    - r-base
     - tiledb 2.4.*
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
   run:
-    - r-base 3.6.*
+    - r-base
     - tiledb 2.4.*
     - r-nanotime
 
