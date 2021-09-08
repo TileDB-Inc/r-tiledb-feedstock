@@ -10,7 +10,7 @@ source:
   sha256: 390e6785d546e6dc014c6b98b1517f1f4848c02a90624df04075459044356d6f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   rpaths:
     - lib/R/lib/
@@ -29,13 +29,13 @@ requirements:
     - r-rcpp >=0.12.15  # [build_platform != target_platform]
   host:
     - r-base 3.6.*
-    - tiledb 2.3.*
+    - tiledb 2.4.*
     - r-rcpp >=0.12.15
     - r-testthat
     - r-nanotime
   run:
     - r-base 3.6.*
-    - tiledb 2.3.*
+    - tiledb 2.4.*
     - r-nanotime
 
 test:
