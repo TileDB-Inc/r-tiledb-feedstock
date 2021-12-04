@@ -6,8 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
-  sha256: bdb4131d9fb2147d0331b7a70c7e245c0681db43b43279ee495c2d2916e29244
+  #url: https://github.com/TileDB-Inc/TileDB-R/archive/{{ version }}.tar.gz
+  #sha256: bdb4131d9fb2147d0331b7a70c7e245c0681db43b43279ee495c2d2916e29244
+  git_url: https://github.com/TileDB-Inc/TileDB-R.git
+  git_sha: 163afa174676b2d29bd09855ab7eae15b216f887
 
 build:
   number: 0
