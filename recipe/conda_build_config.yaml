@@ -1,6 +1,6 @@
 channel_sources:
-  - conda-forge/label/tiledb_rc,conda-forge,defaults
+  - conda-forge,defaults
 channel_targets:
   - conda-forge main
-tiledb:
-  - '2.6.0'
+#tiledb:
+#  - '2.6.2'
